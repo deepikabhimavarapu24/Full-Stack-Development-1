@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h2 align="center">Student Registration Form</h2>
+        <from>
+            <table align="center" border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>Full Name:</td>
+                    <td>
+                        <input type="text" name="fullname" placeholder="Enter your name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Password:</td>
+                    <td>
+                        <input type="password" name="password" placeholder="Enter password">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mobile Number:</td>
+                    <td>
+                        <input type="tel" placeholder="Enter mobile number">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td>
+                        <input type="date" name="dob">
+                    </td>
+                </tr>
+
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+
+            <!-- Checkboxes -->
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <input type="checkbox" name="hobby"> Reading
+                    <input type="checkbox" name="hobby"> Sports
+                    <input type="checkbox" name="hobby"> Music
+                </td>
+            </tr>
+
+            <!-- Select and Option -->
+            <tr>
+                <td>Branch:</td>
+                <td>
+                    <select name="branch">
+                        <option value="">-- Select Branch --</option>
+                        <option value="CSE">CSE</option>
+                        <option value="IT">IT</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- List Box -->
+            <tr>
+                <td>Skills:</td>
+                <td>
+                    <input type="checkbox"> HTML<br>
+                    <input type="checkbox"> CSS<br>
+                    <input type="checkbox"> JavaScript<br>
+                    <input type="checkbox"> Python
+                </td>
+            </tr>
+
+            <!-- Two Buttons -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
