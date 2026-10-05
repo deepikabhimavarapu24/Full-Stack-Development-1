@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Forms</title>
+
+    <style>
+
+        /* Element Selector */
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        /* ID Selector */
+        #intro {
+            color: green;
+            font-size: 18px;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+        }
+
+        /* Group Selector */
+        h2, h3 {
+            color: purple;
+        }
+
+        /* Universal Selector */
+        * {
+            box-sizing: border-box;
+        }
+
+
+        /* =========================
+           2. COMBINATOR SELECTORS
+           ========================= */
+
+        /* Descendant Selector */
+        .box p {
+            color: blue;
+        }
+
+        /* Child Selector */
+        .box > span {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Adjacent Sibling Selector */
+        h3 + p {
+            color: brown;
+        }
+
+        /* General Sibling Selector */
+        h3 ~ div {
+            color: darkorange;
+        }
+
+
+        /* =========================
+           3. PSEUDO-CLASS SELECTOR
+           ========================= */
+
+        a:hover {
+            color: red;
+            font-size: 20px;
+        }
+
+        input:focus {
+            background-color: lightyellow;
+            border: 2px solid blue;
+        }
+
+
+        /* =========================
+           4. PSEUDO-ELEMENT SELECTOR
+           ========================= */
+
+        .para::first-letter {
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .para::first-line {
+            color: darkgreen;
+        }
+
+
+        /* =========================
+           5. ATTRIBUTE SELECTOR
+           ========================= */
+
+        input[type="text"] {
+            border: 2px solid green;
+            padding: 8px;
+        }
+
+        input[type="email"] {
+            border: 2px solid orange;
+            padding: 8px;
+        }
+
+
+        /* Common styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f5f5f5;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .box {
+            padding: 15px;
+            border: 2px solid black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        input {
+            margin: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Selector Forms</h1>
+
+
+    <!-- =========================
+         1. SIMPLE SELECTORS
+         ========================= -->
+
+    <div class="section">
+
+        <h2>1. Simple Selectors</h2>
+
+        <!-- Element Selector -->
+        <p>
+            This paragraph uses the <b>Element Selector</b>.
+        </p>
+
+        <!-- ID Selector -->
+        <p id="intro">
+            This paragraph uses the <b>ID Selector</b>.
+        </p>
+
+        <!-- Class Selector -->
+        <p class="highlight">
+            This paragraph uses the <b>Class Selector</b>.
+        </p>
+
+        <!-- Group Selector -->
+        <h3>Group Selector Heading</h3>
+
+        <!-- Universal Selector -->
+        <p>
+            The Universal Selector (*) applies to all elements.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         2. COMBINATOR SELECTORS
+         ========================= -->
+
+    <div class="section">
+
+        <h2>2. Combinator Selectors</h2>
+
+        <div class="box">
+
+            <!-- Descendant Selector -->
+            <p>
+                This is a paragraph inside the box.
+                It uses the <b>Descendant Selector</b>.
+            </p>
+
+            <!-- Child Selector -->
+            <span>
+                This is a direct child.
+                It uses the <b>Child Selector</b>.
+            </span>
+
+            <h3>Combinator Example</h3>
+
+            <!-- Adjacent Sibling -->
+            <p>
+                This paragraph is immediately after h3.
+                It uses the <b>Adjacent Sibling Selector</b>.
+            </p>
+
+            <!-- General Sibling -->
+            <div>
+                This div is a sibling of h3.
+                It uses the <b>General Sibling Selector</b>.
+            </div>
+
+            <div>
+                This is another sibling of h3.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         3. PSEUDO-CLASS SELECTOR
+         ========================= -->
+
+    <div class="section">
+
+        <h2>3. Pseudo-Class Selector</h2>
+
+        <p>
+            Move the mouse over the link:
+        </p>
+
+        <a href="#">Hover over this link</a>
+
+        <br><br>
+
+        <input type="text" placeholder="Click here to focus">
+
+    </div>
+
+
+    <!-- =========================
+         4. PSEUDO-ELEMENT SELECTOR
+         ========================= -->
+
+    <div class="section">
+
+        <h2>4. Pseudo-Element Selector</h2>
+
+        <p class="para">
+            This paragraph demonstrates pseudo-element selectors.
+            The first letter and first line are styled differently.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         5. ATTRIBUTE SELECTOR
+         ========================= -->
+
+    <div class="section">
+
+        <h2>5. Attribute Selector</h2>
+
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <br>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email">
+
+    </div>
+
+</body>
+</html>
