@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Object</title>
+</head>
+<body>
+    <h2>Array Object Example</h2>
+
+    <button onclick="showArray()">Display Array</button>
+    <p id="result"></p>
+
+    <script>
+        function showArray() {
+            let fruits = ["Apple", "Banana", "Mango"];
+
+            let output = "Original Array: " + fruits + "<br>";
+
+            // Array property
+            output += "Array Length: " + fruits.length + "<br>";
+
+            // Array methods
+            fruits.push("Orange");
+            output += "After Push: " + fruits + "<br>";
+
+            fruits.pop();
+            output += "After Pop: " + fruits + "<br>";
+
+            fruits.sort();
+            output += "After Sort: " + fruits + "<br>";
+
+            fruits.reverse();
+            output += "After Reverse: " + fruits;
+
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</body>
+</html>

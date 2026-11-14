@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Object</title>
+</head>
+<body>
+    <h2>Math Object Example</h2>
+
+    <button onclick="showMath()">Show Math Operations</button>
+    <p id="result"></p>
+
+    <script>
+        function showMath() {
+            let num = 25.6;
+
+            let output = "";
+
+            // Math properties
+            output += "Value of PI: " + Math.PI + "<br>";
+            output += "Value of E: " + Math.E + "<br>";
+
+            // Math methods
+            output += "Square Root: " + Math.sqrt(25) + "<br>";
+            output += "Power: " + Math.pow(2, 3) + "<br>";
+            output += "Round: " + Math.round(num) + "<br>";
+            output += "Ceiling: " + Math.ceil(num) + "<br>";
+            output += "Floor: " + Math.floor(num) + "<br>";
+            output += "Maximum: " + Math.max(10, 20, 30) + "<br>";
+            output += "Minimum: " + Math.min(10, 20, 30);
+
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</body>
+</html>

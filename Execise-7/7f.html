@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegExp Object</title>
+</head>
+<body>
+    <h2>Regular Expression Object Example</h2>
+
+    <button onclick="showRegex()">Check Pattern</button>
+    <p id="result"></p>
+
+    <script>
+        function showRegex() {
+            let pattern = /JavaScript/i;
+            let str = "I am learning JavaScript";
+
+            let output = "";
+
+            // RegExp properties
+            output += "Pattern: " + pattern.source + "<br>";
+            output += "Ignore Case: " + pattern.ignoreCase + "<br>";
+
+            // RegExp methods
+            output += "Test Method: " + pattern.test(str) + "<br>";
+
+            let result = pattern.exec(str);
+            output += "Exec Method: " + result[0] + "<br>";
+
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</body>
+</html>

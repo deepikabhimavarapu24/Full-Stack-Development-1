@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Object</title>
+</head>
+<body>
+    <h2>String Object Example</h2>
+
+    <button onclick="showString()">Show String Operations</button>
+    <p id="result"></p>
+
+    <script>
+        function showString() {
+            let str = "JavaScript Programming";
+
+            let output = "";
+
+            // String property
+            output += "Original String: " + str + "<br>";
+            output += "String Length: " + str.length + "<br>";
+
+            // String methods
+            output += "Uppercase: " + str.toUpperCase() + "<br>";
+            output += "Lowercase: " + str.toLowerCase() + "<br>";
+            output += "Character at 0: " + str.charAt(0) + "<br>";
+            output += "Substring: " + str.substring(0, 10) + "<br>";
+            output += "Replace: " + str.replace("JavaScript", "HTML") + "<br>";
+            output += "Includes: " + str.includes("Script");
+
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</body>
+</html>

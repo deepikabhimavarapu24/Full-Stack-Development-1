@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Object</title>
+</head>
+<body>
+    <h2>Window Object Example</h2>
+
+    <button onclick="showDetails()">Show Window Details</button>
+    <p id="result"></p>
+
+    <script>
+        function showDetails() {
+            let output = "";
+
+            // Window properties
+            output += "Window Width: " + window.innerWidth + "<br>";
+            output += "Window Height: " + window.innerHeight + "<br>";
+            output += "Window URL: " + window.location.href + "<br>";
+
+            document.getElementById("result").innerHTML = output;
+
+            // Window methods
+            window.alert("Welcome to JavaScript Window Object!");
+
+            window.confirm("Do you want to continue?");
+        }
+    </script>
+</body>
+</html>

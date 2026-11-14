@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Denomination Breakdown</title>
+</head>
+<body>
+    <h2>Deposit Denomination Breakdown</h2>
+
+    <button onclick="calculate()">Enter Deposit Amount</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculate() {
+
+            let amount = parseInt(prompt("Enter deposit amount:"));
+
+            if (isNaN(amount) || amount < 0) {
+                alert("Enter a valid amount");
+                return;
+            }
+
+            let denominations = [100, 50, 20, 10, 5, 2, 1];
+
+            let output = "Deposit Amount: " + amount + "<br><br>";
+
+            for (let note of denominations) {
+
+                let count = Math.floor(amount / note);
+
+                if (count > 0) {
+                    output += note + " x " + count + " = " +
+                              (note * count) + "<br>";
+                }
+
+                amount = amount % note;
+            }
+
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</body>
+</html>

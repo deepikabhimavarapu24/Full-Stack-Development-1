@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day Finder</title>
+</head>
+<body>
+
+    <h2>Find Day of the Week</h2>
+
+    <label>Enter Day Number:</label>
+
+    <select id="day">
+        <option value="">Select Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+    </select>
+
+    <button onclick="findDay()">Show Day</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function findDay() {
+
+            let day = Number(document.getElementById("day").value);
+            let result = "";
+
+            switch(day) {
+
+                case 1:
+                    result = "Sunday";
+                    break;
+
+                case 2:
+                    result = "Monday";
+                    break;
+
+                case 3:
+                    result = "Tuesday";
+                    break;
+
+                case 4:
+                    result = "Wednesday";
+                    break;
+
+                case 5:
+                    result = "Thursday";
+                    break;
+
+                case 6:
+                    result = "Friday";
+                    break;
+
+                case 7:
+                    result = "Saturday";
+                    break;
+
+                default:
+                    result = "Please select a valid day";
+            }
+
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>

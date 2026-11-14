@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Object</title>
+</head>
+<body>
+    <h2>Date Object Example</h2>
+
+    <button onclick="showDate()">Show Date and Time</button>
+    <p id="result"></p>
+
+    <script>
+        function showDate() {
+            let today = new Date();
+
+            let output = "";
+
+            // Date methods
+            output += "Current Date: " + today + "<br>";
+            output += "Day: " + today.getDate() + "<br>";
+            output += "Month: " + (today.getMonth() + 1) + "<br>";
+            output += "Year: " + today.getFullYear() + "<br>";
+            output += "Hours: " + today.getHours() + "<br>";
+            output += "Minutes: " + today.getMinutes() + "<br>";
+            output += "Seconds: " + today.getSeconds() + "<br>";
+            output += "Date String: " + today.toDateString();
+
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</body>
+</html>

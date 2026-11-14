@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Object</title>
+</head>
+<body>
+    <h2>Document Object Example</h2>
+
+    <button onclick="showDetails()">Click Here</button>
+    <div id="result"></div>
+
+    <script>
+        function showDetails() {
+            let output = "";
+
+            // Document properties
+            output += "Document Title: " + document.title + "<br>";
+            output += "Document URL: " + document.URL + "<br>";
+
+            // Document methods
+            let heading = document.createElement("h3");
+            heading.innerHTML = "Document Object Methods";
+
+            document.getElementById("result").innerHTML = output;
+            document.getElementById("result").appendChild(heading);
+        }
+    </script>
+</body>
+</html>
