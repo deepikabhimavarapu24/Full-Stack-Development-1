@@ -1,24 +1,24 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Website</title>
-
+    <title>HTML Semantic Elements</title>
     <style>
         body {
             font-family: Arial;
-            margin: 20px;
+            margin: 0;
         }
 
         header {
             background-color: lightblue;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
         }
 
         nav {
-            background-color: gray;
-            padding: 10px;
+            background-color: black;
             text-align: center;
+            padding: 10px;
         }
 
         nav a {
@@ -32,13 +32,14 @@
         }
 
         section {
-            background-color: lightyellow;
+            background-color: lightgreen;
             padding: 15px;
+            margin-bottom: 15px;
         }
 
         div {
-            background-color: lightgreen;
-            padding: 10px;
+            background-color: lightyellow;
+            padding: 15px;
         }
 
         span {
@@ -48,9 +49,8 @@
 
         footer {
             background-color: lightgray;
-            padding: 10px;
             text-align: center;
-            margin-top: 20px;
+            padding: 15px;
         }
     </style>
 </head>
@@ -58,34 +58,39 @@
 <body>
 
     <header>
-        <h1>My Website</h1>
-        <p>Welcome to our official website</p>
+        <h1>Student Information Portal</h1>
     </header>
 
     <nav>
         <a href="#">Home</a> |
-        <a href="#">About Us</a> |
+        <a href="#">About</a> |
+        <a href="#">Courses</a> |
         <a href="#">Contact</a>
     </nav>
 
     <main>
-
         <section>
-            <h2>About Our Website</h2>
-
+            <h2>About Students</h2>
             <div>
                 <p>
-                    Our website provides useful information and services to users.
-                    <span>We aim to provide a simple and user-friendly experience.</span>
+                    Students can learn different subjects and develop
+                    <span>technical skills</span> through education.
                 </p>
             </div>
-
         </section>
 
+        <section>
+            <h2>Courses</h2>
+            <div>
+                <p>B.Tech</p>
+                <p>BCA</p>
+                <p>MCA</p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>Copyright © 2026 My Website. All Rights Reserved.</p>
+        <p>Copyright 2026 Student Portal</p>
     </footer>
 
 </body>
